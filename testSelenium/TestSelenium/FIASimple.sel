@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FIASimple</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">FIASimple</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/KARA_WEB/connexion.do</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>bt_4_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>dateNaissJ</td>
+	<td>21</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>dateNaissM</td>
+	<td>02</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>dateNaissA</td>
+	<td>1987</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>document.fiaForm.codeDptNaiss[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>document.fiaForm.codeDptNaiss[1]</td>
+	<td>label=ALLIER</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//option[@value='03']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>civilite</td>
+	<td>label=Madame</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>nom</td>
+	<td>SINCLAR</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>prenom</td>
+	<td>BOB</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@onclick='ChangerOnglet(2)']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>numVoie</td>
+	<td>1, RUE D'ICI</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>codePostal</td>
+	<td>21321</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>burDistr</td>
+	<td>ICI</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@onclick='ChangerOnglet(3)']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>numICCID</td>
+	<td>89331059970000204013</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>numIMEI</td>
+	<td>111111111111119</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>B2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//img[@onclick='valider()']</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

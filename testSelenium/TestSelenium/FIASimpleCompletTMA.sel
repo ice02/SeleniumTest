@@ -1,0 +1,219 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FIASimpleCompletTMA</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">FIASimpleCompletTMA</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/kara.do</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>V&S KARA - Identification</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>imgtitre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[2]/td[2]</td>
+	<td>Mot de passe :</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>idUtilisateur</td>
+	<td>0088195</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>motDePasse</td>
+	<td>2697</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>B1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>V&S KARA - Menu principal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//img[@id='sfr']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>bt_4_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>bt_4_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>V&S KARA - Souscription prépayé</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>civilite</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>numVoie</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>nom</td>
+	<td>MACHIN</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>prenom</td>
+	<td>CHOSE</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>dateNaissJ</td>
+	<td>01</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>dateNaissM</td>
+	<td>02</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>dateNaissA</td>
+	<td>1987</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@onclick='ChangerOnglet(2)']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>numVoie</td>
+	<td>RUE D'ICI</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>codePostal</td>
+	<td>01234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>burDistr</td>
+	<td>ICI</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>compRes</td>
+	<td>COMPLEMENT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>hameau</td>
+	<td>HAMEAU</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@onclick='ChangerOnglet(3)']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>numICCID</td>
+	<td>89331059970000204013</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>numIMEI</td>
+	<td>111111111111119</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>adresseEmail</td>
+	<td>bob@sfr.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>B2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>&lt;UTI344&gt; Cet IMEI fait référence à un Pack SFR</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//img[@onclick='valider()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Si vous voulez patienter, cliquez sur 'OK'</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@onclick='startInterval()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>&lt;UTI199&gt; Votre demande a bien ete enregistree. Le numero est indique ci-apres.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//img[@onclick="valider('valider')"]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>N° Contrat :</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Nouveau n° d'appel :</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>N° Carte SIM :</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>B1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>V&S KARA - Menu principal</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
